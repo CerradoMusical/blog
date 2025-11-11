@@ -12,15 +12,17 @@ const PostList: React.FC<PostListProps> = ({
   posts, 
   showLoadMore = false, 
   onLoadMore 
-}) => {
-  return (
-    <div className="space-y-4">
-      {posts.map((post) => (
-        <PostCard key={post.id} post={post} />
-      ))}
+}) => {  return (
+    <div>
+      {/* Lista vertical com cards horizontais */}
+      <div className="space-y-6">
+        {posts.map((post) => (
+          <PostCard key={post.id} post={post} />
+        ))}
+      </div>
       
       {showLoadMore && (
-        <div className="text-center pt-6">
+        <div className="text-center pt-8">
           <button
             onClick={onLoadMore}
             className="px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors duration-200"

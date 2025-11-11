@@ -4,7 +4,7 @@ import { mockPlaylists } from '@/data/mockData'
 
 const PlaylistsPage = () => {
   return (
-    <div className="container py-8">
+    <div className="container pt-8 pb-8">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-secondary-900 mb-4">
           Todas as Playlists

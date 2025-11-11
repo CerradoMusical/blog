@@ -2,10 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+@layer utilities {
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}
+
+html,
+body {
   font-family: system-ui, -apple-system, sans-serif;
   line-height: 1.6;
-  color: #334155;
+  color: #1e40af;
 }
 
 .container {
@@ -20,6 +44,30 @@ html, body {
   left: 0;
   right: 0;
   z-index: 50;
-  background: white;
-  border-bottom: 1px solid #e2e8f0;
+  background: #1e3a8a;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  min-height: 80px; /* Aumentado para acomodar logo maior */
+}
+
+/* Adicionando estilos para o tema musical */
+body {
+  padding-top: 0; /* Removendo espaço extra */
+}
+
+.musical-pattern {
+  background-image: radial-gradient(
+      circle at 20% 50%,
+      rgba(251, 191, 36, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(59, 130, 246, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 80%,
+      rgba(251, 191, 36, 0.1) 0%,
+      transparent 50%
+    );
 }

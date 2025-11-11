@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagens - Cerrado Musical</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .image-test { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+        img { max-width: 200px; height: auto; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Teste de Carregamento das Imagens</h1>
+    
+    <div class="image-test">
+        <h3>Perfil - Sopru</h3>
+        <img src="/images/perfil/sopru-capa.jpg" alt="Sopru" onload="this.nextSibling.innerHTML='✓ Carregada'" onerror="this.nextSibling.innerHTML='✗ Erro ao carregar'">
+        <span class="status">Carregando...</span>
+    </div>
+    
+    <div class="image-test">
+        <h3>Perfil - Lucas</h3>
+        <img src="/images/perfil/lucas-capa.jpg" alt="Lucas" onload="this.nextSibling.innerHTML='✓ Carregada'" onerror="this.nextSibling.innerHTML='✗ Erro ao carregar'">
+        <span class="status">Carregando...</span>
+    </div>
+    
+    <div class="image-test">
+        <h3>Bastidores - Fernanda</h3>
+        <img src="/images/bastidores/fernanda-capa.jpg" alt="Fernanda" onload="this.nextSibling.innerHTML='✓ Carregada'" onerror="this.nextSibling.innerHTML='✗ Erro ao carregar'">
+        <span class="status">Carregando...</span>
+    </div>
+    
+    <div class="image-test">
+        <h3>Público - AnaVitória</h3>
+        <img src="/images/publico/anavitoria-capa.jpg" alt="AnaVitoria" onload="this.nextSibling.innerHTML='✓ Carregada'" onerror="this.nextSibling.innerHTML='✗ Erro ao carregar'">
+        <span class="status">Carregando...</span>
+    </div>
+    
+    <div class="image-test">
+        <h3>Projeto - Ana Julia</h3>
+        <img src="/images/projeto/anaJulia.JPG" alt="Ana Julia" onload="this.nextSibling.innerHTML='✓ Carregada'" onerror="this.nextSibling.innerHTML='✗ Erro ao carregar'">
+        <span class="status">Carregando...</span>
+    </div>
+    
+    <div class="image-test">
+        <h3>Logo</h3>
+        <img src="/images/projeto/logo.png" alt="Logo" onload="this.nextSibling.innerHTML='✓ Carregada'" onerror="this.nextSibling.innerHTML='✗ Erro ao carregar'">
+        <span class="status">Carregando...</span>
+    </div>
+
+</body>
+</html>

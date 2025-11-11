@@ -4,8 +4,8 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Portal Editorial',
-  description: 'Portal editorial moderno com Next.js, TypeScript e Tailwind CSS',
+  title: 'Cerrado Musical',
+  description: 'Portal musical moderno com entrevistas exclusivas e bastidores únicos',
 }
 
 export default function RootLayout({
@@ -16,8 +16,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body>
-        <Navbar />
-        <main className="min-h-screen pt-20">
+        <Navbar />        <main className="min-h-screen pt-28">
           {children}
         </main>
         <Footer />

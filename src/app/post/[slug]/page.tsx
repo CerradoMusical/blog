@@ -3,8 +3,14 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import RichText from '@/components/RichText'
-import { getPostBySlug } from '@/data/mockData'
+import { getPostBySlug, mockPosts } from '@/data/mockData'
 import { BreadcrumbItem } from '@/types'
+
+export async function generateStaticParams() {
+  return mockPosts.map((post) => ({
+    slug: post.slug,
+  }))
+}
 
 interface PostPageProps {
   params: Promise<{
@@ -34,9 +40,8 @@ const PostPage = async ({ params }: PostPageProps) => {
     { label: getThemeLabel(post.theme), href: `/tema/${post.theme}` },
     { label: post.title }
   ]
-
   return (
-    <div className="container py-8">
+    <div className="container pt-8 pb-8">
       <Breadcrumbs items={breadcrumbItems} />
       
       {/* Imagem Destaque */}

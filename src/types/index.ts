@@ -17,6 +17,7 @@ export interface Playlist {
   description: string
   posts: Post[]
   imageUrl?: string
+  spotifyUrl?: string
 }
 
 export interface BreadcrumbItem {

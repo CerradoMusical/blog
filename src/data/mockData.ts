@@ -3,117 +3,142 @@ import { Post, Playlist } from '@/types'
 export const mockPosts: Post[] = [
   {
     id: '1',
-    slug: 'primeira-materia-perfil',
-    title: 'Primeira Matéria do Perfil',
-    summary: 'Esta é uma matéria interessante sobre perfil que vai te ensinar muitas coisas importantes.',
-    content: `## Introdução
+    slug: 'historia-banda-sopru',
+    title: 'Sopru: A Banda que Conquistou Corações com sua Autenticidade Musical',
+    summary: 'Uma conversa intimista com os membros da banda Soprü sobre sua trajetória, desafios e o que os motiva a continuar criando música autêntica.',
+    content: `## Soprü: Além da Música, uma Filosofia de Vida
 
-Esta é uma matéria completa sobre o tema perfil. Aqui você encontrará informações detalhadas e bem estruturadas.
+Em uma conversa exclusiva com o Cerrado Musical, os integrantes da banda Soprü abriram o coração para falar sobre sua trajetória, os desafios da música independente e o que os move a continuar criando.
 
-### Subtítulo Importante
+### "A Música É Nossa Linguagem Universal"
 
-O conteúdo continua aqui com mais detalhes e explicações relevantes para o leitor.
+*"Cada música nossa nasce de uma necessidade de expressar algo que não conseguimos dizer apenas com palavras"*, conta o vocalista da banda. *"Nosso objetivo nunca foi apenas entreter, mas conectar pessoas através de experiências compartilhadas."*
 
-Este é um parágrafo normal com informações importantes que complementam o tópico principal.`,
-    imageUrl: 'https://via.placeholder.com/300x300/3b82f6/ffffff?text=Perfil+1',
+### Os Bastidores da Criação
+
+Durante nossa conversa, descobrimos que o processo criativo da Soprü é profundamente colaborativo. Cada membro contribui com sua perspectiva única, criando um mosaico sonoro que reflete a diversidade de experiências do grupo.
+
+### Planos para o Futuro
+
+A banda revelou estar trabalhando em um novo álbum que promete explorar territórios sonoros ainda inexplorados em sua discografia. *"Estamos sempre evoluindo, sempre buscando novas formas de nos expressar"*, finalizam.`,
+    imageUrl: '/images/perfil/sopru-capa.jpg',
     theme: 'perfil',
-    publishedAt: '2024-01-15',
-    author: 'João Silva'
+    publishedAt: '2024-10-15',
+    author: 'Ana Julia'
   },
   {
     id: '2',
-    slug: 'segunda-materia-bastidores',
-    title: 'Nos Bastidores do Projeto',
-    summary: 'Conheça como funciona por trás das câmeras neste artigo exclusivo sobre bastidores.',
-    content: `## Como Tudo Começou
+    slug: 'entrevista-exclusiva-lucas-mennezes',
+    title: 'Lucas Mennezes Revela os Segredos por Trás de suas Composições Mais Emocionantes',
+    summary: 'Em entrevista exclusiva, Lucas Mennezes abre o coração sobre seu processo criativo e os momentos que marcaram sua carreira musical.',
+    content: `## Lucas Mennezes: "A Música Me Salvou em Momentos Difíceis"
 
-Esta matéria revela os segredos por trás do nosso projeto principal.
+Em uma das entrevistas mais tocantes já realizadas pelo Cerrado Musical, Lucas Mennezes compartilhou histórias íntimas sobre sua jornada musical e como a arte o transformou como pessoa.
 
-### Os Desafios Enfrentados
+### A Música Como Refúgio
 
-Durante o desenvolvimento, enfrentamos diversos obstáculos que nos fizeram crescer.
+*"Houve momentos na minha vida em que a música foi meu único refúgio"*, revela Lucas com os olhos marejados. *"Cada acorde que toco carrega um pedaço da minha alma, uma história que precisa ser contada."*
 
-Cada etapa foi cuidadosamente planejada para garantir o melhor resultado possível.`,
-    imageUrl: 'https://via.placeholder.com/300x300/ef4444/ffffff?text=Bastidores+1',
-    theme: 'bastidores',
-    publishedAt: '2024-01-14',
-    author: 'Maria Santos'
+### O Processo Criativo Revelado
+
+Lucas nos levou para dentro de seu estúdio improvisado em casa, mostrando como nasce cada composição. *"Às vezes acordo no meio da noite com uma melodia na cabeça. Tenho que correr para o piano antes que ela escape."*
+
+### Conexão com o Público
+
+*"O que mais me emociona é quando alguém me conta que uma música minha ajudou em um momento difícil. Isso me lembra por que faço música"*, completa o artista.
+
+### Projetos Futuros
+
+Lucas está trabalhando em um projeto especial que combinará música e poesia, prometendo surpreender seus fãs com uma nova faceta artística.`,
+    imageUrl: '/images/perfil/lucas-capa.jpg',
+    theme: 'perfil',
+    publishedAt: '2024-10-14',
+    author: 'Ana Julia'
   },
   {
     id: '3',
-    slug: 'terceira-materia-publico',
-    title: 'Conectando com o Público',
-    summary: 'Estratégias eficazes para se conectar melhor com sua audiência e criar engajamento.',
-    content: `## A Importância da Conexão
+    slug: 'noite-show-fernanda-hofmman',
+    title: 'Uma noite de show com Fernanda Hofmman',
+    summary: 'Acompanhe os bastidores de uma apresentação inesquecível de Fernanda Hofmman e descubra os segredos por trás de um espetáculo memorável.',
+    content: `## Nos Bastidores do Show de Fernanda Hofmman
 
-Conectar-se com o público é fundamental para qualquer projeto de sucesso.
+Uma noite especial se desenrolou quando tivemos a oportunidade de acompanhar Fernanda Hofmman nos bastidores de sua apresentação. O que presenciamos foi muito mais do que apenas um show - foi um verdadeiro espetáculo de profissionalismo e arte.
 
-### Estratégias Comprovadas
+### Preparação Pré-Show
 
-Apresentamos aqui as melhores práticas para criar uma conexão genuína.
+Horas antes do público chegar, Fernanda já estava no local, testando equipamentos e ensaiando detalhes que fariam a diferença na apresentação. Cada elemento do show foi cuidadosamente verificado, desde a iluminação até os últimos ajustes no som.
 
-A autenticidade é a chave para construir relacionamentos duradouros com sua audiência.`,
-    imageUrl: 'https://via.placeholder.com/300x300/10b981/ffffff?text=Público+1',
-    theme: 'publico',
-    publishedAt: '2024-01-13',
-    author: 'Pedro Costa'
+### A Magia do Palco
+
+Quando as cortinas se abriram, transformou-se completamente. A artista que vimos nos bastidores, concentrada e profissional, deu lugar a uma performer carismática que conquistou o público desde os primeiros acordes.
+
+### Conexão com o Público
+
+O que mais impressionou foi a capacidade de Fernanda de criar uma conexão genuína com a plateia. Cada música era entregue com uma intensidade emocional que transformava o ambiente, criando momentos únicos e inesquecíveis.
+
+### Pós-Show
+
+Mesmo após o último bis, Fernanda permaneceu disponível para conversar com fãs e equipe, demonstrando a humildade e carinho que a caracterizam como artista e pessoa.
+
+Esta noite revelou não apenas o talento excepcional de Fernanda Hofmman, mas também o trabalho árduo e a dedicação que estão por trás de cada apresentação memorável.`,
+    imageUrl: '/images/bastidores/fernanda-capa.jpg',
+    theme: 'bastidores',
+    publishedAt: '2024-10-13',
+    author: 'Redação Portal Editorial'
   },
   {
     id: '4',
-    slug: 'quarta-materia-perfil',
-    title: 'Desenvolvimento Pessoal e Profissional',
-    summary: 'Dicas valiosas para o crescimento pessoal e profissional no mundo moderno.',
-    content: `## O Caminho do Crescimento
+    slug: 'norte-ecoa-duas-vozes-anavitoria',
+    title: 'O Norte que ecoa em duas vozes: fãs tocantinenses de AnaVitória',
+    summary: 'Conheça a história emocionante dos fãs tocantinenses da dupla AnaVitória e como a música conecta corações através das distâncias.',
+    content: `## AnaVitória e o Coração do Tocantins
 
-O desenvolvimento pessoal é uma jornada contínua de autodescoberta e melhoria.
+No coração do Tocantins, a música da dupla AnaVitória ressoa com uma intensidade especial. Os fãs tocantinenses criaram uma conexão única com as duas vozes que conquistaram o Brasil, transformando cada canção em um hino de identificação e pertencimento.
 
-### Habilidades Essenciais
+### Conexão Emocional
 
-Identificamos as competências mais importantes para o mercado atual.
+A música de AnaVitória toca profundamente os corações tocantinenses, criando uma ponte emocional que transcende a distância geográfica. As letras sinceras e as melodias envolventes encontram eco especial na sensibilidade do povo do Norte.
 
-Investir em si mesmo é sempre o melhor investimento que você pode fazer.`,
-    imageUrl: 'https://via.placeholder.com/300x300/8b5cf6/ffffff?text=Perfil+2',
-    theme: 'perfil',
-    publishedAt: '2024-01-12',
-    author: 'Ana Oliveira'
-  },
-  {
-    id: '5',
-    slug: 'quinta-materia-bastidores',
-    title: 'Tecnologia nos Bastidores',
-    summary: 'Como a tecnologia revolucionou nossos processos internos e melhorou a produtividade.',
-    content: `## A Revolução Tecnológica
+### Comunidade de Fãs
 
-A implementação de novas tecnologias transformou completamente nossa operação.
+Os admiradores tocantinenses da dupla formaram uma verdadeira comunidade, organizando encontros, covers e eventos que celebram a música de Ana Caetano e Vitória Falcão. Esta união demonstra como a arte pode aproximar pessoas e criar laços duradouros.
 
-### Ferramentas que Fazem a Diferença
+### Impacto Cultural
 
-Exploramos as principais ferramentas que otimizaram nosso trabalho.
+A influência de AnaVitória no Tocantins vai além do entretenimento. Suas canções inspiram jovens músicos locais, fomentam a cena cultural regional e fortalecem a identidade musical do estado.
 
-A automação permitiu que focássemos no que realmente importa: criar conteúdo de qualidade.`,
-    imageUrl: 'https://via.placeholder.com/300x300/f59e0b/ffffff?text=Bastidores+2',
-    theme: 'bastidores',
-    publishedAt: '2024-01-11',
-    author: 'Carlos Lima'
+### Encontros Especiais
+
+Quando AnaVitória se apresenta na região Norte, os fãs tocantinenses fazem verdadeiras peregrinações para prestigiar suas ídolas. Estes encontros são marcados por momentos emocionantes de reconhecimento mútuo entre artistas e público.
+
+### O Eco Permanente
+
+O Norte que ecoa em duas vozes não é apenas uma expressão poética, mas uma realidade vivida diariamente pelos fãs tocantinenses que encontram em AnaVitória não apenas entretenimento, mas uma forma de expressão da própria alma nordestina.
+
+Esta conexão especial entre AnaVitória e seus fãs tocantinenses demonstra o poder universal da música de unir pessoas, independentemente da distância física ou cultural.`,
+    imageUrl: '/images/publico/anavitoria-capa.jpg',
+    theme: 'publico',
+    publishedAt: '2024-10-12',
+    author: 'Redação Portal Editorial'
   }
 ]
 
 export const mockPlaylists: Playlist[] = [
   {
     id: '1',
-    slug: 'playlist-iniciantes',
-    name: 'Playlist 1 - Para Iniciantes',
-    description: 'Uma coleção de artigos perfeita para quem está começando sua jornada.',
-    imageUrl: 'https://via.placeholder.com/400x300/3b82f6/ffffff?text=Playlist+1',
-    posts: [mockPosts[0], mockPosts[2]]
+    slug: 'artistas-em-foco',    name: 'Artistas em Foco',
+    description: 'Uma coletânea de perfis e trajetórias dos principais artistas da música independente brasileira.',
+    imageUrl: '/images/perfil/sopru-capa.jpg',
+    spotifyUrl: 'https://open.spotify.com/playlist/31R7rx1S4iTsJa4uM0lUAG?si=9FoqzYGmQjeBTm0BMQ6RzQ',
+    posts: [mockPosts[0], mockPosts[1]]
   },
   {
     id: '2',
-    slug: 'playlist-avancados',
-    name: 'Playlist 2 - Conteúdo Avançado',
-    description: 'Artigos mais profundos para quem quer se aprofundar nos temas.',
-    imageUrl: 'https://via.placeholder.com/400x300/ef4444/ffffff?text=Playlist+2',
-    posts: [mockPosts[1], mockPosts[3], mockPosts[4]]
+    slug: 'conexao-com-publico',    name: 'Conexão com o Público',
+    description: 'Histórias que mostram a relação especial entre artistas e fãs, revelando o poder transformador da música.',
+    imageUrl: '/images/publico/anavitoria-capa.jpg',
+    spotifyUrl: 'https://open.spotify.com/playlist/44XCNhsVz9AWjxo620100F?si=8T9hMfHfQkm0Y7kKubIgrg',
+    posts: [mockPosts[2], mockPosts[3]]
   }
 ]
 
