@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  trailingSlash: true,
+  // trailingSlash: true,  // REMOVER esta linha
+
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -15,6 +16,7 @@ const nextConfig = {
       },
     ],
   },
+
   // Apenas aplicar basePath em produção
   ...(process.env.NODE_ENV === 'production' && {
     basePath: '/blog', // nome EXATO do repositório
