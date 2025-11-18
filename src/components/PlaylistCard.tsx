@@ -9,8 +9,12 @@ interface PlaylistCardProps {
 
 const PlaylistCard: React.FC<PlaylistCardProps> = ({ playlist }) => {
   return (
-    <div className="bg-gradient-to-br from-orange-500 via-red-600 to-red-700 rounded-2xl p-6 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 max-w-sm">
-      {/* Header com imagem da playlist */}
+    <a 
+      href={playlist.spotifyUrl} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block bg-gradient-to-br from-orange-500 via-red-600 to-red-700 rounded-2xl p-6 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 max-w-sm"
+    >
       <div className="flex items-start gap-4 mb-6">
         {playlist.imageUrl && (
           <div className="flex-shrink-0">
@@ -32,11 +36,9 @@ const PlaylistCard: React.FC<PlaylistCardProps> = ({ playlist }) => {
             <span className="text-sm opacity-90">Save on Spotify</span>
           </div>
 
-          <Link href={`/playlist/${playlist.slug}`}>
-            <h3 className="text-xl font-bold mb-1 hover:underline cursor-pointer line-clamp-2">
-              {playlist.name}
-            </h3>
-          </Link>
+          <h3 className="text-xl font-bold mb-1 line-clamp-2">
+            {playlist.name}
+          </h3>
 
           <p className="text-sm opacity-80">
             Curated Musical
@@ -92,8 +94,8 @@ const PlaylistCard: React.FC<PlaylistCardProps> = ({ playlist }) => {
             <div className="flex items-center gap-3 flex-1 min-w-0">
               <span className="text-white/60 w-4">{index + 1}</span>
               <div className="flex-1 min-w-0">
-                <p className="font-medium truncate">{post.title}</p>
-                <p className="text-white/60 truncate">{post.author}</p>
+                <p className="font-medium truncate">{post.musicTitle || post.title}</p>
+                <p className="text-white/60 truncate">{post.artistName || post.author}</p>
               </div>
             </div>
             <span className="text-white/60 ml-2">02:{Math.floor(Math.random() * 60).toString().padStart(2, '0')}</span>
@@ -117,7 +119,7 @@ const PlaylistCard: React.FC<PlaylistCardProps> = ({ playlist }) => {
           </a>
         </div>
       )}
-    </div>
+    </a>
   )
 }
 

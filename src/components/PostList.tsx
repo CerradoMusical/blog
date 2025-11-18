@@ -14,8 +14,8 @@ const PostList: React.FC<PostListProps> = ({
   onLoadMore 
 }) => {  return (
     <div>
-      {/* Lista vertical com cards horizontais */}
-      <div className="space-y-6">
+      {/* Grid responsivo com cards verticais */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {posts.map((post) => (
           <PostCard key={post.id} post={post} />
         ))}

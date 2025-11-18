@@ -17,36 +17,17 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gray-50">      {/* Hero Section com Banner Musical */}
       <section 
-        className="relative min-h-[500px] flex items-center justify-center overflow-hidden -mt-28 pt-28"
+        className="relative min-h-[300px] flex items-center justify-center overflow-hidden py-16"
         style={{
-          background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 25%, #d97706 50%, #b45309 75%, #92400e 100%)',
+          backgroundImage: `url('/images/projeto/banner.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Background com notas musicais */}
-        <div 
-          className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage: `url('/images/projeto/banner.png')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        ></div>
-        
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-yellow-600/20"></div>
         
         {/* Conteúdo */}
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">          <div className="mb-8 transform hover:scale-105 transition-transform duration-300">
-            <Image
-              src="/images/projeto/logo.png"
-              alt="Cerrado Musical"
-              width={550}
-              height={180}
-              className="mx-auto drop-shadow-2xl"
-              priority
-            />
-          </div>
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         </div>
       </section>
 
@@ -55,7 +36,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              ✨ Últimas Matérias
+              Últimas Matérias
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto mb-6">
               Descubra as histórias mais recentes do mundo musical
@@ -76,7 +57,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">
-              🎵 Playlists Especiais
+              Playlists Especiais
             </h2>
             <p className="text-blue-100 max-w-2xl mx-auto mb-6">
               Curadoria musical especial para diferentes momentos

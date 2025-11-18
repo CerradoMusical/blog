@@ -36,16 +36,16 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
   }
 
   return (
-    <Link href={`/post/${post.slug}`} className="group block max-w-4xl mx-auto">
-      <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col md:flex-row border border-gray-100">
-        {/* Imagem - responsiva */}
-        <div className="relative w-full md:w-80 h-48 md:h-48 flex-shrink-0 overflow-hidden">
+    <Link href={`/post/${post.slug}`} className="group block max-w-md mx-auto">
+      <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col border border-gray-100">
+        {/* Imagem - sempre no topo */}
+        <div className="relative w-full h-48 flex-shrink-0 overflow-hidden">
           <Image
             src={post.imageUrl}
             alt={post.title}
             fill
             className="object-cover group-hover:scale-110 transition-transform duration-500"
-            sizes="(max-width: 768px) 100vw, 320px"
+            sizes="(max-width: 768px) 100vw, 384px"
           />
           {/* Overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>

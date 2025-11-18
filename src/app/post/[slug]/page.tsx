@@ -3,6 +3,12 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import RichText from '@/components/RichText'
+import BandaSopruLayout from '@/components/BandaSopruLayout'
+import LucasMennezesLayout from '@/components/LucasMennezesLayout'
+import FernandaHofmmanLayout from '@/components/FernandaHofmmanLayout'
+import BarbaraCrivelariLayout from '@/components/BarbaraCrivelariLayout'
+import Projeto1Mais1Layout from '@/components/Projeto1Mais1Layout'
+import AnaVitoriaLayout from '@/components/AnaVitoriaLayout'
 import { getPostBySlug, mockPosts } from '@/data/mockData'
 import { BreadcrumbItem } from '@/types'
 
@@ -24,6 +30,36 @@ const PostPage = async ({ params }: PostPageProps) => {
 
   if (!post) {
     notFound()
+  }
+
+  // Se for o post da banda Soprü, usar layout especial
+  if (post.slug === 'historia-banda-sopru') {
+    return <BandaSopruLayout />
+  }
+
+  // Se for o post do Lucas Mennezes, usar layout especial
+  if (post.slug === 'entrevista-exclusiva-lucas-mennezes') {
+    return <LucasMennezesLayout />
+  }
+
+  // Se for o post da Fernanda Hofmman, usar layout especial
+  if (post.slug === 'noite-show-fernanda-hofmman') {
+    return <FernandaHofmmanLayout />
+  }
+
+  // Se for o post da Barbara Crivelari, usar layout especial
+  if (post.slug === 'barbara-crivelari') {
+    return <BarbaraCrivelariLayout />
+  }
+
+  // Se for o post do Projeto 1+1, usar layout especial
+  if (post.slug === 'projeto-1-mais-1') {
+    return <Projeto1Mais1Layout />
+  }
+
+  // Se for o post da AnaVitória, usar layout especial
+  if (post.slug === 'norte-ecoa-duas-vozes-anavitoria') {
+    return <AnaVitoriaLayout />
   }
 
   const getThemeLabel = (theme: string) => {

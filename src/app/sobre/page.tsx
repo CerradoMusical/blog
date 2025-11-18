@@ -55,14 +55,14 @@ export default function SobrePage() {
                   Quem Somos
                 </h2>
                 <p>
-                  🎵 Este site nasceu do desejo de contar as <strong>histórias da cena musical do Tocantins</strong>,
+                  Este site nasceu do desejo de contar as <strong>histórias da cena musical do Tocantins</strong>,
                   mostrar os bastidores, valorizar os artistas locais e dar voz também a quem está do
                   outro lado do palco, o público.
 
                 </p>
                 
                 <p>
-                  🎤 Aqui, a proposta é juntar comunicação e música de um jeito leve e próximo, criando
+                  Aqui, a proposta é juntar comunicação e música de um jeito leve e próximo, criando
                     um espaço de diálogo entre artistas, fãs e todos que acreditam na força da cultura
                     tocantinense. Cada reportagem e entrevista busca mostrar o quanto a produção
                     musical do estado é rica, diversa e cheia de identidade.
@@ -70,9 +70,9 @@ export default function SobrePage() {
                 </p>
                 
                 <p>
-                  ✨ Seja através de entrevistas intimistas, cobertura de bastidores ou 
-                  histórias inspiradoras de fãs, cada conteúdo é criado com carinho e 
-                  dedicação para trazer você mais perto da música que ama.
+                  Nosso propósito é fortalecer a cena musical do Tocantins, ajudando a construir
+                    visibilidade para quem faz arte com paixão e autenticidade. Este é um espaço feito
+                    para quem ama música, para quem vive, sente e se inspira com cada acorde.
                 </p>
               </div>
 
@@ -94,7 +94,9 @@ export default function SobrePage() {
             
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <div className="text-4xl mb-4">🎯</div>
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-8 h-8 bg-blue-500 rounded-full"></div>
+                </div>
                 <h4 className="font-bold text-blue-900 mb-3">Autenticidade</h4>
                 <p className="text-gray-600">
                   Conteúdo real, entrevistas genuínas e histórias verdadeiras que tocam o coração.
@@ -102,7 +104,9 @@ export default function SobrePage() {
               </div>
               
               <div className="text-center bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <div className="text-4xl mb-4">💫</div>
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-8 h-8 bg-purple-500 rounded-full"></div>
+                </div>
                 <h4 className="font-bold text-blue-900 mb-3">Qualidade</h4>
                 <p className="text-gray-600">
                   Cada matéria é cuidadosamente produzida com atenção aos detalhes e respeito aos artistas.
@@ -110,7 +114,9 @@ export default function SobrePage() {
               </div>
               
               <div className="text-center bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <div className="text-4xl mb-4">🤝</div>
+                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-8 h-8 bg-yellow-500 rounded-full"></div>
+                </div>
                 <h4 className="font-bold text-blue-900 mb-3">Conexão</h4>
                 <p className="text-gray-600">
                   Aproximamos fãs e artistas através de histórias que inspiram e emocionam.

@@ -8,6 +8,8 @@ export interface Post {
   theme: 'perfil' | 'bastidores' | 'publico'
   publishedAt: string
   author: string
+  musicTitle?: string // Título musical para playlists
+  artistName?: string // Nome do artista para playlists
 }
 
 export interface Playlist {
