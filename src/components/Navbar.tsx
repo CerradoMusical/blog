@@ -3,7 +3,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import Image from 'next/image'
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -32,11 +31,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center ml-8">
-            <Image
-              src="/images/projeto/logo.png"
+            <img
+              src="/blog/images/projeto/logo.png"
               alt="Cerrado Musical"
-              width={350}
-              height={100}
+              width="350"
+              height="100"
               className="h-20 w-auto"
             />
           </Link>

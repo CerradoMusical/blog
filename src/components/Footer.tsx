@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 
 const Footer = () => {
@@ -8,11 +7,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 gap-8">
           
           {/* Logo e descrição */}          <div className="text-center md:text-left">
-            <Image
-              src="/images/projeto/logo.png"
+            <img
+              src="/blog/images/projeto/logo.png"
               alt="Cerrado Musical"
-              width={200}
-              height={60}
+              width="200"
+              height="60"
               className="mx-auto md:mx-0 mb-4"
             />
             <p className="text-blue-100 text-sm leading-relaxed">

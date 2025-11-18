@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Post } from '@/types'
 
@@ -40,12 +39,10 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
       <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col border border-gray-100">
         {/* Imagem - sempre no topo */}
         <div className="relative w-full h-48 flex-shrink-0 overflow-hidden">
-          <Image
-            src={post.imageUrl}
+          <img
+            src={`/blog${post.imageUrl}`}
             alt={post.title}
-            fill
-            className="object-cover group-hover:scale-110 transition-transform duration-500"
-            sizes="(max-width: 768px) 100vw, 384px"
+            className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           />
           {/* Overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>

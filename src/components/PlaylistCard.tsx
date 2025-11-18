@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Playlist } from '@/types'
 
@@ -18,11 +17,11 @@ const PlaylistCard: React.FC<PlaylistCardProps> = ({ playlist }) => {
       <div className="flex items-start gap-4 mb-6">
         {playlist.imageUrl && (
           <div className="flex-shrink-0">
-            <Image
-              src={playlist.imageUrl}
+            <img
+              src={`/blog${playlist.imageUrl}`}
               alt={playlist.name}
-              width={80}
-              height={80}
+              width="80"
+              height="80"
               className="w-20 h-20 object-cover rounded-lg shadow-md"
             />
           </div>
