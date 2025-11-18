@@ -2,10 +2,12 @@
 const nextConfig = {
   output: 'export',
   basePath: '/blog',
-  assetPrefix: '/blog',
+  assetPrefix: '/blog/',
 
   images: {
     unoptimized: true,
+    loader: 'custom',
+    loaderFile: './src/utils/imageLoader.ts',
     remotePatterns: [
       {
         protocol: 'http',
