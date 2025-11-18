@@ -1,0 +1,10 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/banda/sopru/page": "app/banda/sopru/page.js",
+  "/page": "app/page.js",
+  "/playlists/page": "app/playlists/page.js",
+  "/sobre/page": "app/sobre/page.js",
+  "/playlist/[slug]/page": "app/playlist/[slug]/page.js",
+  "/post/[slug]/page": "app/post/[slug]/page.js",
+  "/tema/[slug]/page": "app/tema/[slug]/page.js"
+}
