@@ -15,10 +15,9 @@ const nextConfig = {
       },
     ],
   },
-  // Apenas aplicar basePath e assetPrefix em produção
+  // Apenas aplicar basePath em produção
   ...(process.env.NODE_ENV === 'production' && {
-    basePath: '/blog',       // <- nome EXATO do repositório
-    assetPrefix: '/blog',    // <- igual ao basePath
+    basePath: '/blog', // nome EXATO do repositório
   }),
 };
 
