@@ -12,14 +12,14 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'via.placeholder.com',
-      }
-    ]
+      },
+    ],
   },
   // Apenas aplicar basePath e assetPrefix em produção
   ...(process.env.NODE_ENV === 'production' && {
-    basePath: '/cerrado-musical',
-    assetPrefix: '/cerrado-musical',
+    basePath: '/blog',       // <- nome EXATO do repositório
+    assetPrefix: '/blog',    // <- igual ao basePath
   }),
-}
+};
 
 module.exports = nextConfig
