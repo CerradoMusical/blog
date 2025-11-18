@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // trailingSlash: true,  // REMOVER esta linha
+  basePath: '/blog',
+  assetPrefix: '/blog',
 
   images: {
     unoptimized: true,
@@ -16,11 +17,6 @@ const nextConfig = {
       },
     ],
   },
-
-  // Apenas aplicar basePath em produção
-  ...(process.env.NODE_ENV === 'production' && {
-    basePath: '/blog', // nome EXATO do repositório
-  }),
 };
 
 module.exports = nextConfig
