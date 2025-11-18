@@ -17,7 +17,7 @@ export default function HomePage() {
         <div 
           className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage: `url('/images/projeto/banner.png')`,
+            backgroundImage: `url('${process.env.NODE_ENV === 'production' ? '/blog' : ''}/images/projeto/banner.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'

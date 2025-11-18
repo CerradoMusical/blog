@@ -1,33 +1,43 @@
 {
-  "name": "cerrado-musical",
+  "name": "blog",
   "version": "1.0.0",
   "description": "Um portal editorial moderno construído com Next.js, TypeScript e Tailwind CSS",
-  "keywords": ["nextjs", "typescript", "tailwindcss", "editorial", "portal", "blog"],
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "editorial",
+    "portal",
+    "blog"
+  ],
   "author": "Cerrado Musical Team",
   "license": "MIT",
   "private": false,
-  "homepage": "https://seu-usuario.github.io/cerrado-musical",
+  "homepage": "https://CerradoMusical.github.io/blog",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seu-usuario/cerrado-musical.git"
+    "url": "https://github.com/CerradoMusical/blog.git"
   },
   "scripts": {
-    "dev": "next dev",    "build": "next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "deploy": "npm run build && gh-pages -d out"
-  },  "dependencies": {
+  },
+  "dependencies": {
     "next": "13.5.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"
-  },"devDependencies": {
+  },
+  "devDependencies": {
     "@types/node": "20.11.19",
     "@types/react": "18.3.0",
     "@types/react-dom": "18.3.0",
     "autoprefixer": "10.4.18",
     "eslint": "8.57.0",
     "eslint-config-next": "13.5.6",
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.3.0",
     "postcss": "8.4.35",
     "tailwindcss": "3.4.1",
     "typescript": "5.3.3"

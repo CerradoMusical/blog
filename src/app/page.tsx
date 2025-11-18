@@ -19,7 +19,7 @@ export default function HomePage() {
       <section 
         className="relative min-h-[300px] flex items-center justify-center overflow-hidden py-16"
         style={{
-          backgroundImage: `url('/images/projeto/banner.png')`,
+          backgroundImage: `url('${process.env.NODE_ENV === 'production' ? '/blog' : ''}/images/projeto/banner.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
